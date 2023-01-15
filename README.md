@@ -7,4 +7,4 @@ HOW-TO-PLAY :
   a) Tap on all dice which have the same value (they will turn green) \
   b) Roll them \
   c) Repeat until all the dice are green and have same value 
-5) Race against your friends XD
+5) Race against your friends and see who wins in less number of turns XD
