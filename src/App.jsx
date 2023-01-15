@@ -8,6 +8,7 @@ export default function App() {
 
     const [dice, setDice] = useState(allNewDice())
     const [tenzies, setTenzies] = useState(false)
+    const [steps, setSteps] = useState(0)
 
     function generateNewDie() {
         return {
@@ -29,6 +30,7 @@ export default function App() {
         setDice(oldDice => oldDice.map(die => {
             return die.isHeld ? die : generateNewDie()
         }))
+        setSteps(step => step+1)
     }
 
     function holdDice(id) {
@@ -50,6 +52,7 @@ export default function App() {
     function newGame() {
         setDice(allNewDice())
         setTenzies(false)
+        setSteps(0)
     }
 
     const diceElements = dice.map(die => <Die value={die.value} key={die.id} isHeld={die.isHeld} holdDice={() => holdDice(die.id)}/>)
@@ -62,6 +65,7 @@ export default function App() {
             <div className="dice-container" >
                {diceElements}
             </div>
+            <p className="steps">Steps : {steps}</p>
             <button className="roll-dice"  onClick={tenzies ? newGame :rollDice}
             style={tenzies? {width:"150px"} : {width:"90px"}}>
                 {tenzies ? "New Game" : "Roll"}

@@ -77,6 +77,11 @@ main {
     color: antiquewhite;
 }
 
+.steps {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         padding: 0;
