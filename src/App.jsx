@@ -65,7 +65,7 @@ export default function App() {
             <div className="dice-container" >
                {diceElements}
             </div>
-            <p className="steps">Steps : {steps}</p>
+            <p className="steps">Turns : {steps}</p>
             <button className="roll-dice"  onClick={tenzies ? newGame :rollDice}
             style={tenzies? {width:"150px"} : {width:"90px"}}>
                 {tenzies ? "New Game" : "Roll"}
