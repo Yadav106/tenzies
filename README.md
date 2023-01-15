@@ -1,6 +1,8 @@
 # tenzies
 Tenzies game made with ReactJS
 
+Play it here : https://spontaneous-cajeta-8f4ef8.netlify.app
+
 HOW-TO-PLAY : 
 1) Open the game on your and your friends' phone 
 2) On Each Turn : \
